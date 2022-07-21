@@ -30,6 +30,7 @@ for (let i = 0; i < redesSociais.length; i++) {
 
 for (let i in redesSociais) {
   // console.log(i + ': ' + redesSociais[i]);
+  //interpolação
   // console.log(`${i}: ${redesSociais[i]}`);
 }
 
@@ -40,7 +41,15 @@ for (let valor of redesSociais) {
 
 //valor = indice, redes = uma cópia, apelido para o array no caso redesSociais
 redesSociais.forEach((valor, indice, redes) => {
-  console.log(valor);
-  console.log(indice);
-  console.log(redes);
+  // console.log(valor);
+  // console.log(indice);
+  // console.log(redes);
 });
+
+const aPagarEmReais = [10, 20, 40, 100];
+const cotacaoDola = 5;
+const aPagarEmDolar = aPagarEmReais.map((valor) => valor * cotacaoDola);
+
+console.table(aPagarEmReais);
+console.table(aPagarEmDolar);
+
